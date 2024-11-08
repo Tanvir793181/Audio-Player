@@ -1,0 +1,172 @@
+   
+   
+   
+                        /* body style */
+
+                        body {
+                            font-family: "Poppins", sans-serif;
+                            background-color: #f8e0e0; /* Light reddish background */
+                            margin: 0;
+                            padding: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
+                            overflow: hidden;
+                        }
+                    
+                    
+                    
+                    
+                                         /* main area styling start */
+                        .audio-player {
+                            background-color: #4b0082; /* Deep purple for the player */
+                            width: 350px;
+                            padding: 25px;
+                            border-radius: 20px;
+                            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+                            text-align: center;
+                            color: #fff;
+                            position: relative;
+                            overflow: hidden;
+                            border: 5px solid transparent; /* Initial border */
+                            animation: borderAnimation 2s infinite; /* Animated border */
+                            box-shadow: rgba(7, 7, 213, 0.49) 0px 7px 29px 0px;
+                        }
+                    
+                    
+                                                    /* border animation */
+                        @keyframes borderAnimation {
+                            0% {
+                                border-color: #9400d3;
+                            }
+                            50% {
+                                border-color: #ff4d4d;
+                            }
+                            100% {
+                                border-color: #9400d3;
+                            }
+                        }
+                    
+                    
+                    
+                                              /* ======input area design======== */
+                         #fileInput, #link{
+                            background-color: #ffc918; /* input fields color */
+                            border: none;
+                            border-radius: 5px;
+                            color: #fff;
+                            padding: 20px;
+                            width: 80%;
+                            margin-bottom: 15px;
+                            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+                        }
+                        #link::placeholder {
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 600;
+                            color: rgb(0, 0, 0);
+                        }
+                    
+                                         /* =========file input styling========== */
+                    
+                                                   /* file upload button */
+                        #fileInput::file-selector-button {
+                            border-radius: 4px;
+                            padding: 0 16px;
+                            height: 40px;
+                            cursor: pointer;
+                            background-color: white;
+                            border: 1px solid rgba(0, 0, 0, 0.16);
+                            box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+                            margin-right: 16px;
+                            transition: background-color 200ms;
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 700;
+                            color: black;
+                        }
+                    
+                                    /* file upload button hover state */
+                          #fileInput::file-selector-button:hover {
+                             background-color: #f3f4f6;
+                         }
+                    
+                                    /* file upload button active state */
+                        #fileInput::file-selector-button:active {
+                            background-color: #e5e7eb;
+                        }
+                    
+                                        /* ------------------------ */
+                    
+                    
+                         /* =========file input styling end========== */
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        .controls button {
+                            background-color: #9400d3; /* Purple buttons */
+                            border: none;
+                            color: white;
+                            padding: 12px 30px;
+                            font-size: 16px;
+                            cursor: pointer;
+                            border-radius: 30px;
+                            margin: 10px 5px;
+                            transition: background-color 0.3s ease;
+                        }
+                    
+                        .controls button:hover {
+                            background-color: #ff4d4d; /* Reddish hover effect */
+                        }
+                    
+                    
+                    
+                        /* volume control + progress bar */
+                        .volume-control, .progress-bar {
+                            font-weight: 800;
+                            padding: 10px;
+                        }
+                        .volume-control input[type="range"],
+                        .progress-bar input[type="range"] {
+                            -webkit-appearance: none;
+                            width: 100%;
+                            height: 5px;
+                            background: #8a2be2; /* Purple slider track */
+                            outline: none;
+                            border-radius: 5px;
+                        }
+                    
+                        .volume-control input[type="range"]::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                            appearance: none;
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            background: #ff4d4d; /* Reddish thumb */
+                            cursor: pointer;
+                        }
+                    
+                        .progress-bar input[type="range"]::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                            appearance: none;
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            background: #ff4d4d; /* Reddish thumb */
+                            cursor: pointer;
+                        }
+                    
+                        .audio-info {
+                            padding: 5px;
+                            font-size: 10px;
+                            font-weight: 500;
+                        }
+                    
+                        .time-info {
+                            padding: 10px;
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
